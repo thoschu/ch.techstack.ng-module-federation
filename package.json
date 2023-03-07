@@ -2,7 +2,18 @@
   "name": "ng-module-federation",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve host --open",
+    "build": "nx build host",
+    "test": "nx test host",
+    "lint": "nx lint host",
+    "e2e": "nx e2e host",
+    "affected:apps": "nx affected:apps",
+    "affected:libs": "nx affected:libs",
+    "affected:build": "nx affected:build",
+    "affected:e2e": "nx affected:e2e",
+    "nx:graph": "nx graph"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~15.2.0",
